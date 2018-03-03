@@ -4,6 +4,7 @@ test('Check', () => {
   expect(true).toEqual(true);
 });
 
+// test 1
 test('Remove middle', () => {
   const words = [ 'mouse', 'giraffe', 'queen', 'window', 'bottle'];
 
@@ -16,6 +17,7 @@ test('Remove middle', () => {
   expect(words).toEqual(expectedWords);
 });
 
+// test 2
 test('Get second and third', () => {
   const numbers = [ 90, 5, 11, 5, 6 ];
 
@@ -28,7 +30,8 @@ test('Get second and third', () => {
   expect(numbers).toEqual(expectedNumbers);
 });
 
-test('Add 1 to each item in myArray', () => {
+// test 3
+ test('Add 1 to each item in myArray', () => {
   const myArray = [ 31, 57, 12, 5];
 
   const unchanged = [ 31, 57, 12, 5];
@@ -38,17 +41,29 @@ test('Add 1 to each item in myArray', () => {
 
   expect(output).toEqual(expected);
   expect(myArray).toEqual(unchanged);
-});
+}); 
 
-test('Get word lengths', () => {
+test('Make all the letters in the array uppercase', ()=>{
+  const letters = ['e', 'R', 'w', 't', 'Y', 'o'];
+
+  const capitalLetters = ['E', 'R', 'W', 'T', 'Y', 'O'];
+
+  const output = functions.makeUppercase(letters)
+
+  expect(output).toEqual(capitalLetters)
+})
+
+// test 4
+/* test('Get word lengths', () => {
   const words = [ 'sun', 'potato', 'roundabout', 'pizza' ];
   const expected = [ 3, 6, 10, 5 ];
 
   const output = functions.wordLengths( words );
   expect(output).toEqual( expected );
-});
+}); */
 
-test('Cities', () => {
+// test 5
+/*test('Cities', () => {
   const capitals = [
     { city: 'Paris', country: 'France' },
     { city: 'Madrid', country: 'Spain' },
@@ -68,59 +83,72 @@ test('Cities', () => {
   const result = functions.cities(capitals, transform);
 
   expect(result).toEqual(expected);
-});
+});*/
 
-test('Get numbers greater than 10', () => {
+// test 6
+/*test('Get numbers greater than 10', () => {
   const numbers = [ 4, 10, 32, 9, 21];
   const expected = [ 32, 21 ];
 
   const output = functions.largerThanTen( numbers );
   expect(output).toEqual( expected );
 });
+*/
 
-test('Get even numbers', () => {
+// test 7
+/*test('Get even numbers', () => {
   const numbers = [ 22, 13, 73, 82, 4];
   const expected = [ 22, 82, 4 ];
 
   const output = functions.even( numbers );
   expect(output).toEqual( expected );
 });
+*/
 
-test('Find the needle', () => {
+// test 8
+/*test('Find the needle', () => {
   const words = [ 'house', 'train', 'slide', 'needle', 'book' ];
   const expected = 3;
 
   const output = functions.findTheNeedle( words );
   expect(output).toEqual( expected );
 });
+*/
 
-test('Find largest number', () => {
+// test 9
+/*test('Find largest number', () => {
   const numbers = [ 3, 21, 88, 4, 36];
   const expected = 88;
 
   const output = functions.findLargest( numbers );
   expect(output).toEqual( expected );
 });
+*/
 
-test('Add all numbers', () => {
+// test 10
+/*test('Add all numbers', () => {
   const numbers = [ 9, 23, 10, 3, 8 ];
   const expected = 53;
 
   const output = functions.addAllnumbers( numbers );
 
-  expect( output ).toEqual( 53 );
+  expect( output ).toEqual( expected );
 });
+*/
 
-test('Average', () => {
+// test 11
+/*test('Average', () => {
   const numbers = [ 4, '-', 8, 11, 'hello', '57', 0, 2 ];
-  const expected = 53;
+  const expected = 5;
 
   const output = functions.average( numbers );
 
-  expect( output ).toEqual( 5 );
+  expect( output ).toEqual( expected );
 });
+*/
 
-test('Paint shop', () => {
+// test 12
+/*test('Paint shop', () => {
   const cars = [
     { make: 'Ford', model: 'Fiesta', colour: 'Red' },
     { make: 'Land Rover', model: 'Defender', colour: 'Muddy' },
@@ -147,8 +175,10 @@ test('Paint shop', () => {
   expect( output ).toEqual( repaintedCars );
   expect( cars ).toEqual( unpaintedCars );
 });
+*/
 
-test('Car sales', () => {
+// test 13
+/*test('Car sales', () => {
   const carsSold = [
     { make: 'Ford', model: 'Fiesta', colour: 'Red', price: 5999 },
     { make: 'Land Rover', model: 'Defender', colour: 'Muddy', price: 12000 },
@@ -170,16 +200,20 @@ test('Car sales', () => {
 
   expect( output ).toEqual( totals );
 });
+*/
 
-test('Second largest', () => {
+// test 14
+/*test('Second largest', () => {
   const numbers = [ 2, 0, 23, 0, 57, 1 ];
 
   const output = functions.secondLargest( numbers );
 
   expect( output ).toEqual( 2 );
 });
+*/
 
-test('Factorial', () => {
+//test15
+/*test('Factorial', () => {
   const in1 = 5;
   const exp1 = 120;
 
@@ -207,7 +241,4 @@ test('Factorial', () => {
   expect( out4 ).toEqual( exp4 );
   expect( out5 ).toEqual( exp5 );
 });
-
-
-
-
+*/

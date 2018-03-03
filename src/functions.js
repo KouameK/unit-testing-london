@@ -3,20 +3,56 @@ function removeMiddle( words ){
   // return a new array containing only the middle word
   // the words array should no longer contain the middle word
   // hint: splice
+  
+  // console.log(words.length);
+  // console.log(words);
+  var newArray=[]
+  newArray= words.splice(2,1)
+  
+  // console.log(words);
+  // console.log(newArray);
+  return newArray
+
 }
 
 function get2ndAnd3rd( myArray ){
   // myArray is an array of numbers
-  // return an array containing the 2nd and 3rd items from myArray
+  // return an array containing the 2nd and
+  //  3rd items from myArray
   // myArray should remain unchanged
   // hint: slice
+
+  // console.log(myArray);
+  var secondArray = myArray.slice(1,3)
+  // console.log(secondArray);
+  return secondArray
+
 }
 
 function mapper( myArray ){
   // myArray is an array of numbers
-  // return a new array which has all items in myArray incremented by one
+  // return a new array which has all items 
+  // in myArray incremented by one
   // myArray should remain unchanged
   // hint: map
+  console.log(myArray);
+  var thirdArray = myArray.map(function (x){
+    return  x + 1
+  })
+  console.log(thirdArray)
+  return thirdArray 
+}
+
+function makeUppercase(letters) {
+  //make all the letters in the array 
+  // uppercase if they are not
+  console.log(letters);
+  var uppercase= letters.map(function(x){
+    return x.toUpperCase()
+  })
+   return uppercase
+   
+
 }
 
 function wordLengths( words ){
@@ -144,5 +180,6 @@ module.exports = {
   average,
   paintShop,
   sales,
-  secondLargest
+  secondLargest,
+  makeUppercase
 };
