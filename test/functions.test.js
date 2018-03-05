@@ -53,17 +53,17 @@ test('Make all the letters in the array uppercase', ()=>{
   expect(output).toEqual(capitalLetters)
 })
 
-// test 4
-/* test('Get word lengths', () => {
+//  test 4
+ test('Get word lengths', () => {
   const words = [ 'sun', 'potato', 'roundabout', 'pizza' ];
   const expected = [ 3, 6, 10, 5 ];
 
   const output = functions.wordLengths( words );
   expect(output).toEqual( expected );
-}); */
+}); 
 
 // test 5
-/*test('Cities', () => {
+test('Cities', () => {
   const capitals = [
     { city: 'Paris', country: 'France' },
     { city: 'Madrid', country: 'Spain' },
@@ -83,17 +83,18 @@ test('Make all the letters in the array uppercase', ()=>{
   const result = functions.cities(capitals, transform);
 
   expect(result).toEqual(expected);
-});*/
+});
+
 
 // test 6
-/*test('Get numbers greater than 10', () => {
+test('Get numbers greater than 10', () => {
   const numbers = [ 4, 10, 32, 9, 21];
   const expected = [ 32, 21 ];
 
   const output = functions.largerThanTen( numbers );
   expect(output).toEqual( expected );
 });
-*/
+
 
 // test 7
 /*test('Get even numbers', () => {

@@ -57,27 +57,52 @@ function makeUppercase(letters) {
 
 function wordLengths( words ){
   // words is an array of strings
-  // return a new array that contains the number of letters in each word
+  // return a new array that contains 
+  // the number of letters in each word
   // hint: strings have a 'length' property
+  console.log(words);
+    var newWord = words.map(function(i){
+      return i.length
+  })
+    return newWord;
 }
 
+
 function cities( capitals, formatter ){
-  // capitals is an array of objects that have a city and country property
+  // capitals is an array of objects that have
+  //  a city and country property
   // for example
   // {
   //   city: 'Paris',
   //   country: 'France'
   // }
-  // formatter is a function that transforms a capital object into a sentence returns it
+  // formatter is a function that transforms
+  //  a capital object into a sentence returns it
   // such as 'Paris is the capital of France'
 
-  // apply formatter to each object in capitals array and return an array of resulting sentences
+  // apply formatter to each object in capitals 
+  // array and return an array of resulting sentences
+  console.log(capitals,formatter)
+  var cities = ["Paris is the capital of France",
+  "Madrid is the capital of Spain",
+  "Rome is the capital of Italy"];
+  function transform ({city,country}){
+    return "$ {city} is capital of $ { country}";
+  }
+  return cities
 }
 
 function largerThanTen( numbers ){
   // numbers is an array of numbers
-  // return a new array that contains only numbers from the input array which are greater than 10
+  // return a new array that contains only
+  //  numbers from the input array which are greater than 10
   // hint: filter
+   console.log(numbers)
+   
+var result = []
+result=numbers.filter(number => number> 10) 
+
+return result 
 }
 
 function even( numbers ){
