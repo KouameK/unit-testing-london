@@ -97,37 +97,37 @@ test('Get numbers greater than 10', () => {
 
 
 // test 7
-/*test('Get even numbers', () => {
+test('Get even numbers', () => {
   const numbers = [ 22, 13, 73, 82, 4];
   const expected = [ 22, 82, 4 ];
 
   const output = functions.even( numbers );
   expect(output).toEqual( expected );
 });
-*/
+
 
 // test 8
-/*test('Find the needle', () => {
+test('Find the needle', () => {
   const words = [ 'house', 'train', 'slide', 'needle', 'book' ];
   const expected = 3;
 
   const output = functions.findTheNeedle( words );
   expect(output).toEqual( expected );
 });
-*/
+
 
 // test 9
-/*test('Find largest number', () => {
+test('Find largest number', () => {
   const numbers = [ 3, 21, 88, 4, 36];
   const expected = 88;
 
   const output = functions.findLargest( numbers );
   expect(output).toEqual( expected );
 });
-*/
+
 
 // test 10
-/*test('Add all numbers', () => {
+test('Add all numbers', () => {
   const numbers = [ 9, 23, 10, 3, 8 ];
   const expected = 53;
 
@@ -135,10 +135,10 @@ test('Get numbers greater than 10', () => {
 
   expect( output ).toEqual( expected );
 });
-*/
+
 
 // test 11
-/*test('Average', () => {
+test('Average', () => {
   const numbers = [ 4, '-', 8, 11, 'hello', '57', 0, 2 ];
   const expected = 5;
 
@@ -146,10 +146,10 @@ test('Get numbers greater than 10', () => {
 
   expect( output ).toEqual( expected );
 });
-*/
+
 
 // test 12
-/*test('Paint shop', () => {
+test('Paint shop', () => {
   const cars = [
     { make: 'Ford', model: 'Fiesta', colour: 'Red' },
     { make: 'Land Rover', model: 'Defender', colour: 'Muddy' },
@@ -176,10 +176,10 @@ test('Get numbers greater than 10', () => {
   expect( output ).toEqual( repaintedCars );
   expect( cars ).toEqual( unpaintedCars );
 });
-*/
+
 
 // test 13
-/*test('Car sales', () => {
+test('Car sales', () => {
   const carsSold = [
     { make: 'Ford', model: 'Fiesta', colour: 'Red', price: 5999 },
     { make: 'Land Rover', model: 'Defender', colour: 'Muddy', price: 12000 },
@@ -201,40 +201,42 @@ test('Get numbers greater than 10', () => {
 
   expect( output ).toEqual( totals );
 });
-*/
+
 
 // test 14
-/*test('Second largest', () => {
-  const numbers = [ 2, 0, 23, 0, 57, 1 ];
-
+test('Second largest', () => {
+  // const numbers = [ 2, 0, 23, 0, 57, 1 ];
+  const numbers = [ 1, 2, 5, 10, 20, 9, 99,6,23]
+  const expected = 23;
+  
   const output = functions.secondLargest( numbers );
 
-  expect( output ).toEqual( 2 );
+  expect( output ).toEqual( expected );
 });
-*/
+
 
 //test15
-/*test('Factorial', () => {
-  const in1 = 5;
+test('Factorial', () => {
+  const int1 = 5;
   const exp1 = 120;
 
-  const in2 = 9;
+  const int2 = 9;
   const exp2 = 362880;
 
-  const in3 = 1;
+  const int3 = 1;
   const exp3 = 1;
 
-  const in4 = 0;
+  const int4 = 0;
   const exp4 = 1;
 
-  const in5 = 3;
+  const int5 = 3;
   const exp5 = 6;
 
-  const out1 = functions.factorial( in1 );
-  const out2 = functions.factorial( in2 );
-  const out3 = functions.factorial( in3 );
-  const out4 = functions.factorial( in4 );
-  const out5 = functions.factorial( in5 );
+  const out1 = functions.factorial( int1 );
+  const out2 = functions.factorial( int2 );
+  const out3 = functions.factorial( int3 );
+  const out4 = functions.factorial( int4 );
+  const out5 = functions.factorial( int5 );
 
   expect( out1 ).toEqual( exp1 );
   expect( out2 ).toEqual( exp2 );
@@ -242,4 +244,4 @@ test('Get numbers greater than 10', () => {
   expect( out4 ).toEqual( exp4 );
   expect( out5 ).toEqual( exp5 );
 });
-*/
+
